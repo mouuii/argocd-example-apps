@@ -21,10 +21,10 @@ spec:
         volumeMounts:
         - name: guestbook
           mountPath: "/etc/guestbook.yaml"
-    volumes:
-    - name: guestbook
-      configMap:
-        name: guestbook
+      volumes:
+      - name: guestbook
+        configMap:
+         name: guestbook
 ---
 apiVersion: v1
 kind: ConfigMap
