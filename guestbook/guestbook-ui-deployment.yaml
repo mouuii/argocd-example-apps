@@ -24,7 +24,6 @@ spec:
     volumes:
     - name: guestbook
       configMap:
-      name: guestbook    
 ---
 apiVersion: v1
 kind: ConfigMap
