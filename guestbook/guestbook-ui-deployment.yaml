@@ -18,6 +18,9 @@ spec:
         name: guestbook-ui
         ports:
         - containerPort: 80
+        volumeMounts:
+        - name: guestbook
+          mountpath: "/etc/guestbook.yaml"
 ---
 apiVersion: v1
 kind: ConfigMap
