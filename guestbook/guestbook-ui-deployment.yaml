@@ -20,7 +20,7 @@ spec:
         - containerPort: 80
         volumeMounts:
         - name: guestbook
-          mountPath: "/etc/guestbook.yaml"
+          mountPath: "/etc/guestbook"
       volumes:
       - name: guestbook
         configMap:
